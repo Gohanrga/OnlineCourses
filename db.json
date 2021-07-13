@@ -1,0 +1,330 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Java",
+      "title": "Java Advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aspernatur necessitatibus voluptate amet, incidunt corrupti mollitia a dicta assumenda officiis vero provident atque quam expedita quasi rerum. Possimus, nesciunt autem.",
+      "averageRating": "4.5",
+      "rating": 422,
+      "hours": "3.20",
+      "start": "May '21",
+      "end": "Dec. '21",
+      "img": "https://4a7efb2d53317100f611-1d7064c4f7b6de25658a4199efb34975.ssl.cf1.rackcdn.com/dark-days-oracle-kills-java-plug-in-dead-showcase_image-9-p-2047.jpg",
+      "payment": [
+        {
+          "codeType": "1",
+          "type": "PIF (pay in full)",
+          "cost": "$6,795",
+          "discount": "$4,795",
+          "save": "Save $1500 in tuition",
+          "fees": "No processing feed"
+        },
+        {
+          "codeType": "2",
+          "type": "16 Instalaments",
+          "cost": "of $399 / Month",
+          "save": "Save $500 in tuition",
+          "fees": "No processing feed",
+          "interest": "0% interest rate"
+        },
+        {
+          "codeType": "3",
+          "type": "24 Instalaments",
+          "cost": "of $299 / Month",
+          "save": "Save $250 in tuition",
+          "fees": "No processing feed",
+          "interest": "5.99% interest rate"
+        },
+        {
+          "codeType": "4",
+          "type": "48 Instalaments",
+          "cost": "of $199 / Month",
+          "fees": "No processing feed",
+          "interest": "11.99% interest rate"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "JavaScript",
+      "title": "JavaScript Basic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aspernatur necessitatibus voluptate amet, incidunt corrupti mollitia a dicta assumenda officiis vero provident atque quam expedita quasi rerum. Possimus, nesciunt autem.",
+      "averageRating": "4.5",
+      "rating": 422,
+      "hours": "3.20",
+      "start": "May '21",
+      "end": "Dec. '21",
+      "img": "https://d8285fmxt3duy.cloudfront.net/public/articulos/img/java-script1.jpg",
+      "payment": [
+        {
+          "codeType": "1",
+          "type": "PIF (pay in full)",
+          "cost": "$6,795",
+          "discount": "$4,795",
+          "save": "Save $1500 in tuition",
+          "fees": "No processing feed"
+        },
+        {
+          "codeType": "2",
+          "type": "16 Instalaments",
+          "cost": "of $399 / Month",
+          "save": "Save $500 in tuition",
+          "fees": "No processing feed",
+          "interest": "0% interest rate"
+        },
+        {
+          "codeType": "3",
+          "type": "24 Instalaments",
+          "cost": "of $299 / Month",
+          "save": "Save $250 in tuition",
+          "fees": "No processing feed",
+          "interest": "5.99% interest rate"
+        },
+        {
+          "codeType": "4",
+          "type": "48 Instalaments",
+          "cost": "of $199 / Month",
+          "fees": "No processing feed",
+          "interest": "11.99% interest rate"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Python",
+      "title": "Python",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aspernatur necessitatibus voluptate amet, incidunt corrupti mollitia a dicta assumenda officiis vero provident atque quam expedita quasi rerum. Possimus, nesciunt autem.",
+      "averageRating": "4.5",
+      "rating": 422,
+      "hours": "3.20",
+      "start": "May '21",
+      "end": "Dec. '21",
+      "img": "https://i2ds.org/wp-content/uploads/2020/03/python-faq-670x335-1.jpg",
+      "payment": [
+        {
+          "codeType": "1",
+          "type": "PIF (pay in full)",
+          "cost": "$6,795",
+          "discount": "$4,795",
+          "save": "Save $1500 in tuition",
+          "fees": "No processing feed"
+        },
+        {
+          "codeType": "2",
+          "type": "16 Instalaments",
+          "cost": "of $399 / Month",
+          "save": "Save $500 in tuition",
+          "fees": "No processing feed",
+          "interest": "0% interest rate"
+        },
+        {
+          "codeType": "3",
+          "type": "24 Instalaments",
+          "cost": "of $299 / Month",
+          "save": "Save $250 in tuition",
+          "fees": "No processing feed",
+          "interest": "5.99% interest rate"
+        },
+        {
+          "codeType": "4",
+          "type": "48 Instalaments",
+          "cost": "of $199 / Month",
+          "fees": "No processing feed",
+          "interest": "11.99% interest rate"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "UI/UX",
+      "title": "UI/UX Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aspernatur necessitatibus voluptate amet, incidunt corrupti mollitia a dicta assumenda officiis vero provident atque quam expedita quasi rerum. Possimus, nesciunt autem.",
+      "averageRating": "4.5",
+      "rating": 422,
+      "hours": "3.20",
+      "start": "May '21",
+      "end": "Dec. '21",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiHBA5d3k_ojy0tFbtCYUAP9maxMSgoVohWowMRcl1EUpUHrPWOOo_hMm31QBhOOwIr18&usqp=CAU",
+      "payment": [
+        {
+          "codeType": "1",
+          "type": "PIF (pay in full)",
+          "cost": "$6,795",
+          "discount": "$4,795",
+          "save": "Save $1500 in tuition",
+          "fees": "No processing feed"
+        },
+        {
+          "codeType": "2",
+          "type": "16 Instalaments",
+          "cost": "of $399 / Month",
+          "save": "Save $500 in tuition",
+          "fees": "No processing feed",
+          "interest": "0% interest rate"
+        },
+        {
+          "codeType": "3",
+          "type": "24 Instalaments",
+          "cost": "of $299 / Month",
+          "save": "Save $250 in tuition",
+          "fees": "No processing feed",
+          "interest": "5.99% interest rate"
+        },
+        {
+          "codeType": "4",
+          "type": "48 Instalaments",
+          "cost": "of $199 / Month",
+          "fees": "No processing feed",
+          "interest": "11.99% interest rate"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Spring Boot",
+      "title": "Spring Boot",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aspernatur necessitatibus voluptate amet, incidunt corrupti mollitia a dicta assumenda officiis vero provident atque quam expedita quasi rerum. Possimus, nesciunt autem.",
+      "averageRating": "4.5",
+      "rating": 422,
+      "hours": "3.20",
+      "start": "May '21",
+      "end": "Dec. '21",
+      "img": "https://miro.medium.com/max/850/1*WsfmenxQNE1hhZasxsIGhA.png",
+      "payment": [
+        {
+          "codeType": "1",
+          "type": "PIF (pay in full)",
+          "cost": "$6,795",
+          "discount": "$4,795",
+          "save": "Save $1500 in tuition",
+          "fees": "No processing feed"
+        },
+        {
+          "codeType": "2",
+          "type": "16 Instalaments",
+          "cost": "of $399 / Month",
+          "save": "Save $500 in tuition",
+          "fees": "No processing feed",
+          "interest": "0% interest rate"
+        },
+        {
+          "codeType": "3",
+          "type": "24 Instalaments",
+          "cost": "of $299 / Month",
+          "save": "Save $250 in tuition",
+          "fees": "No processing feed",
+          "interest": "5.99% interest rate"
+        },
+        {
+          "codeType": "4",
+          "type": "48 Instalaments",
+          "cost": "of $199 / Month",
+          "fees": "No processing feed",
+          "interest": "11.99% interest rate"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Vue.js",
+      "title": "Vue.js Advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aspernatur necessitatibus voluptate amet, incidunt corrupti mollitia a dicta assumenda officiis vero provident atque quam expedita quasi rerum. Possimus, nesciunt autem.",
+      "averageRating": "4.5",
+      "rating": 422,
+      "hours": "3.20",
+      "start": "May '21",
+      "end": "Dec. '21",
+      "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--ON6smotD--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/xa7en7o59vtxdhgte92u.jpeg",
+      "payment": [
+        {
+          "codeType": "1",
+          "type": "PIF (pay in full)",
+          "cost": "$6,795",
+          "discount": "$4,795",
+          "save": "Save $1500 in tuition",
+          "fees": "No processing feed"
+        },
+        {
+          "codeType": "2",
+          "type": "16 Instalaments",
+          "cost": "of $399 / Month",
+          "save": "Save $500 in tuition",
+          "fees": "No processing feed",
+          "interest": "0% interest rate"
+        },
+        {
+          "codeType": "3",
+          "type": "24 Instalaments",
+          "cost": "of $299 / Month",
+          "save": "Save $250 in tuition",
+          "fees": "No processing feed",
+          "interest": "5.99% interest rate"
+        },
+        {
+          "codeType": "4",
+          "type": "48 Instalaments",
+          "cost": "of $199 / Month",
+          "fees": "No processing feed",
+          "interest": "11.99% interest rate"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "email": "gohanrga@gmail.com",
+      "password": "$2a$10$7tYLbGlolY3rRHGjTggQ4Owc8s8zJLznZx1Md2.9Mi.lW3OvO43Kq",
+      "fullName": "Roger Gonzales Aparicio",
+      "id": 1
+    },
+    {
+      "email": "amachaca@gmail.com",
+      "password": "$2a$10$O7LiFmyKEd8pJWCXoQsYrO4CwA1wf1QHFdpTFS8gAMgdC3bd3TULC",
+      "fullName": "Alejandro Machaca",
+      "id": 2
+    }
+  ],
+  "students": [
+    {
+      "fullName": "Roger Gonzales Aparicio",
+      "mail": "gohanrga@gmail.com",
+      "country": {
+        "label": "Bolivia",
+        "value": "BOL"
+      },
+      "id": 1,
+      "personalDetail": {
+        "dateBirth": "2021/07/13",
+        "gender": "Male",
+        "address": "PAsaje Esteban Arce",
+        "phoneNumber": "79125083",
+        "preferredLanguage": "Spanish",
+        "educationLevel": {
+          "label": "Bachelor Degree",
+          "value": "1"
+        }
+      },
+      "courses": [
+        {
+          "idCourse": 2,
+          "codePayment": "2"
+        },
+        {
+          "idCourse": 1,
+          "codePayment": "2"
+        }
+      ]
+    },
+    {
+      "fullName": "Alejandro Machaca",
+      "mail": "amachaca@gmail.com",
+      "country": {
+        "label": "Bolivia",
+        "value": "BOL"
+      },
+      "id": 2
+    }
+  ],
+  "studentEnrollment": []
+}
