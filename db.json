@@ -283,6 +283,12 @@
       "password": "$2a$10$O7LiFmyKEd8pJWCXoQsYrO4CwA1wf1QHFdpTFS8gAMgdC3bd3TULC",
       "fullName": "Alejandro Machaca",
       "id": 2
+    },
+    {
+      "email": "patito@gmail.com",
+      "password": "$2a$10$Uxo3EYqo91KKhNIzPEgr/ezt0uz3Bi08bhL4hMk2XT90U6avu.PEy",
+      "fullName": "Roger",
+      "id": 3
     }
   ],
   "students": [
@@ -324,7 +330,15 @@
         "value": "BOL"
       },
       "id": 2
+    },
+    {
+      "fullName": "Roger",
+      "mail": "patito@gmail.com",
+      "country": {
+        "label": "Mexico",
+        "value": "MEX"
+      },
+      "id": 3
     }
-  ],
-  "studentEnrollment": []
+  ]
 }

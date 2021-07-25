@@ -41,22 +41,23 @@ export default {
     methods: {
         getCourses(){
             apiService
-            .get('courses')
+            .get('getCourses')
             .then(response => {
                 this.courses = response.data;
                 this.updateMyCurses();
             })
         },
         updateMyCurses(){
-            let coursesStudent = this.userData.courses
-            console.log(coursesStudent)
-            if(coursesStudent!==undefined){
+            let service = `getCoursePayment/${this.userData.id}`;
+            apiService
+            .get(service)
+            .then(response => {
+                let coursesStudent = response.data
                 this.courses = this.courses.filter(course => {
-                    console.log(coursesStudent.filter(stdCourse => stdCourse.idCourse===course.id))
                     if(coursesStudent.filter(stdCourse => stdCourse.idCourse===course.id).length>0)
                         return course;
                 })
-            }
+            })
         },
     },
 }

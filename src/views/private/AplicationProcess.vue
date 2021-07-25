@@ -145,7 +145,7 @@
                         <h6>Personal Details</h6>
                         <span>Have questions about the applications? Want some more info? Call us! 65170024</span>
                     </div>
-                    <div class="col-md-6 q-mt-md" v-for="pay in course.payment" :key="pay.codeType" @click="selectpayment(pay.codeType)" >
+                    <div class="col-md-6 q-mt-md" v-for="pay in course.payment" :key="pay.codeType" @click="selectpayment(pay.id)" >
                         <CardPayment :paymentInfo="pay" :paymentSelected="codePayment"/>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ export default {
     },
     data() {
         return {
-            codePayment: '',
+            codePayment: 0,
             educationLevel: [{label: 'Bachelor Degree', value: '1'}],
             rules: {
                 required: v => !!v || 'Required',  
@@ -226,17 +226,67 @@ export default {
         verifyInformationData(){
             if(this.userData.personalDetail !== undefined){
                 this.personDetail= {
-                    dateBirth: this.userData.personalDetail.dateBirth,
-                    gender: this.userData.personalDetail.gender,
-                    address: this.userData.personalDetail.address,
-                    phoneNumber: this.userData.personalDetail.phoneNumber,
-                    preferredLanguage: this.userData.personalDetail.preferredLanguage,
-                    educationLevel: this.userData.personalDetail.educationLevel
+                    dateBirth: this.userData.dateBirth,
+                    gender: this.userData.gender,
+                    address: this.userData.address,
+                    phoneNumber: this.userData.phoneNumber,
+                    preferredLanguage: this.userData.preferredLanguage,
+                    educationLevel: this.userData.educationLevel
                 };
             }
         },
+        updateInformationStudent(){
+            let parameters = {
+                id: this.userData.id,
+                dateBirth: this.personDetail.dateBirth,
+                gender: this.personDetail.gender,
+                address: this.personDetail.address,
+                phoneNumber: this.personDetail.phoneNumber,
+                preferredLanguage: this.personDetail.preferredLanguage,
+                educationLevel: this.personDetail.educationLevel.value
+            }
+            console.log(parameters)
+            apiService
+            .put('updateStudent', parameters)
+            .then(response => {
+                this.saveUserData(response.data);
+            })
+            .catch(error=>{
+                console.log(error)
+                this.$q.notify({
+                    color: 'red-5',
+                    textColor: 'white',
+                    icon: 'mdi-alert',
+                    position: 'top',
+                    message: 'Sorry, we could not update your profile. '
+                });
+            })
+        },
         enrollment(){
-            let coursesStudent = this.userData.courses === undefined ? [] : this.userData.courses;
+            let parameters = {
+                idCourse: this.course.id,
+                idPayment: this.codePayment,
+                idStudent: this.userData.id
+            }
+
+            apiService
+            .post('insertCoursePayment', parameters)
+            .then(response=>{
+                console.log(response)
+                this.updateInformationStudent();
+                this.closeDialog();
+            })
+            .catch(error=>{
+                this.$q.notify({
+                    color: 'red-5',
+                    textColor: 'white',
+                    icon: 'mdi-alert',
+                    position: 'top',
+                    message: 'Sorry, we could not enroll you. Please try again.'
+                });
+            })
+
+            /*let coursesStudent = this.userData.courses === undefined ? [] : this.userData.courses;
             
             coursesStudent.push({
                 idCourse: this.course.id,
@@ -262,7 +312,7 @@ export default {
                     position: 'top',
                     message: 'Sorry, we could not update your profile. Please try again.'
                 });
-            })
+            })*/
         },
     },
 }

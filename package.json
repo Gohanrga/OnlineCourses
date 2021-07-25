@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "json-server -p3001 --watch db.json -m ./node_modules/json-server-auth & vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "server": ""
+    "server": "json-server -p3001 --watch db.json -m ./node_modules/json-server-auth & vue-cli-service serve"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

@@ -166,7 +166,7 @@ export default {
             apiService
             .post('login', parameters)
             .then(response => {
-                this.getUser(this.login.username);
+                this.saveUserData(response.data);
                 this.cleanData();
                 this.closeDialogLogin();
                 this.$q.notify({
@@ -204,11 +204,12 @@ export default {
                     password: this.register.password
                 }
                 apiService
-                .post('users', parameters)
+                .post('insertUser', parameters)
                 .then(response => {
                     this.createStudent();
                 })
                 .catch(error=>{
+                    console.log(error)
                     this.$q.notify({
                         color: 'red-5',
                         textColor: 'white',
@@ -222,11 +223,11 @@ export default {
         createStudent(){
             let parameters = {
                 fullName : this.register.fullName,
-                mail: this.register.username,
-                country: this.register.country
+                email: this.register.username,
+                codeCountry: this.register.country.value
             }
             apiService
-            .post('students', parameters)
+            .post('insertStudent', parameters)
             .then(response=>{
                 this.$q.notify({
                     color: 'green-4',
@@ -241,14 +242,7 @@ export default {
             .catch(error=>{
             })
         },
-        getUser(email){
-            let service = `students?mail=${email}`;
-            apiService
-            .get(service)
-            .then(response => {
-                this.saveUserData(response.data[0]);
-            })
-        },
+
         cleanData(){
             this.login = {
                 username: '',

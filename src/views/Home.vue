@@ -33,7 +33,7 @@ export default {
     methods: {
         getCourses(){
             apiService
-            .get('courses')
+            .get('getCourses')
             .then(response => {
                 this.courses = response.data;
             })

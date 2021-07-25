@@ -66,23 +66,44 @@ export default {
     methods: {
         getCourses(){
             apiService
-            .get('courses')
+            .get('getCourses')
             .then(response => {
                 this.courses = response.data;
                 this.updateCurses();
             })
         },
         updateCurses(){
-            let coursesStudent = this.userData.courses
-            this.courses = this.courses.filter(course => {
-                if(coursesStudent === undefined || 
-                   coursesStudent.filter(stdCourse => stdCourse.idCourse===course.id).length===0)
-                    return course;
+            let service = `getCoursePayment/${this.userData.id}`;
+            apiService
+            .get(service)
+            .then(response => {
+                let coursesStudent = response.data
+                this.courses = this.courses.filter(course => {
+                    if(coursesStudent.filter(stdCourse => stdCourse.idCourse===course.id).length===0)
+                        return course;
+                })
             })
         },
         openDialogEnroll(course){
             this.course = course;
-            this.dialogEnroll = true; 
+            this.getPayment();
+        },
+        getPayment(){
+            apiService
+            .get('getPayments')
+            .then(response => {
+                this.course['payment'] = response.data;
+                this.dialogEnroll = true;
+            })
+            .catch(error=>{
+                this.$q.notify({
+                    color: 'red-5',
+                    textColor: 'white',
+                    icon: 'mdi-alert',
+                    position: 'top',
+                    message: 'We can get payment information, please try again.'
+                });
+            })
         },
         closeDialogEnroll(){
             this.dialogEnroll = false; 

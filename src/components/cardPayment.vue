@@ -1,5 +1,5 @@
 <template>
-    <div :class="{'card-payment':true, 'card-payment-active': (paymentSelected === paymentInfo.codeType)}" v-if="paymentInfo">
+    <div :class="{'card-payment':true, 'card-payment-active': (paymentSelected === paymentInfo.id)}" v-if="paymentInfo">
         <div class="content">
             <div class="header-payment q-mb-sm">
                 <h6>{{paymentInfo.type}}</h6>
@@ -25,8 +25,8 @@ export default {
             default: {}
         },
         paymentSelected:{
-            type: String,
-            default: ''
+            type: Number,
+            default: 0
         }
     }
 }
